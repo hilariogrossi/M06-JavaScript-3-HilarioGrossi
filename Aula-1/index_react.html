@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <link rel="stylesheet" href="css/style_1.css">
+        <title>Futerbol Total</title>
+
+    </head>
+
+    <body>
+        <div id="cabecalhos"></div>
+        
+    </body>
+
+    <script type="text/jsx">
+        const cabecalho = document.getElementById('cabecalhos');
+
+        ReactDOM.render(<Tudo />, cabecalho);
+
+        function Tudo() {
+            return (
+                <>
+                    <Cabecalho />
+
+                </>
+
+            );
+
+        }
+
+        function Cabecalho() {
+            return (
+                <div>
+                    <nav id="cabecalho">
+                        <a href="#"><img id="image_1" src="images/footballTotal.jpg" /></a>
+
+                        <span className="span_1">
+                            <a href="#">Partidas</a>
+
+                        </span>
+
+                        <span className="span_1">
+                            <a href="#">Times</a>
+
+                        </span>
+
+                        <span className="span_1">
+                            <a href="#">Competições</a>
+
+                        </span>
+
+                        <span className="span_1">
+                            <a href="#"><img id="lupa" src="images/lupa.png" alt="Lupa" /></a>
+
+                        </span>
+
+                        <span className="span_1">
+                            <img id="pipeline" src="images/pipeline.png" alt="Pipe Line" />
+
+                        </span>
+
+                        <span className="span_1">
+                            <a href="#"><img id="engrenagem" src="images/engrenagem.svg" alt="Configurações" /></a>
+
+                        </span>
+
+                        <span className="span_1">
+                            <a href="#" className="btn cadastro">Cadastre-se</a>
+
+                        </span>
+
+                        <span className="span_1">
+                            <a href="#" className="btn entrar">Entrar</a>
+
+                        </span>
+
+                    </nav>
+
+                </div>
+
+            );
+
+        }
+
+    </script>
+
+</html>
